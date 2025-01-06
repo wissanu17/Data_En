@@ -8,4 +8,11 @@ transaction_id,product_name,category,quantity,price,transaction_date
 1007,HP Spectre x360,Laptops,1,1399,2023-12-04
 1008,Apple MacBook Pro,Laptops,2,1999,2023-12-04
 1009,Bose SoundLink II,Headphones,1,229,2023-12-05
-1010,Google Pixel 7,Electronics,1,599,2023-12-05
+1010,แมว,Electronics,1,599,2023-12-05
+1011,Apple iPhone 14,Electronics,1,999,2023-12-06
+1012,Samsung Galaxy S22,Electronics,1,849,2023-12-06
+1013,Dell XPS 13,Laptops,1,1099,2023-12-07
+1014,Sony WH-1000XM5,Headphones,1,399,2023-12-07
+1015,Apple AirPods Pro,Headphones,1,249,2023-12-08
+1016,Logitech MX Master 3,Accessories,1,99,2023-12-08
+1017,HP Spectre x360,Laptops,1,1399,2023-12-09

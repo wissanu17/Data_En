@@ -25,9 +25,16 @@ def load_to_mysql(data, table_name, config):
 
     # เตรียมคำสั่ง SQL สำหรับการ insert ข้อมูล
     for _, row in data.iterrows():
-        sql = f"INSERT INTO {table_name} ({', '.join(data.columns)}) VALUES ({', '.join(['%s'] * len(row))})"
-        cursor.execute(sql, tuple(row))
-
+        update_values = ', '.join([f"{col} = %s" for col in data.columns if col != 'transaction_id'])
+        sql = f"""
+        INSERT INTO {table_name} 
+        ({', '.join(data.columns)}) 
+        VALUES ({', '.join(['%s'] * len(row))})
+        ON DUPLICATE KEY UPDATE 
+        {update_values}
+        """
+        cursor.execute(sql, tuple(row) + tuple(row[1:]))  # ใช้ tuple 2 ครั้งเพื่อให้ข้อมูลตรงกับทั้ง insert และ update
+        
     # Commit การเปลี่ยนแปลงและปิดการเชื่อมต่อ
     connection.commit()
     cursor.close()
