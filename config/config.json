@@ -1,0 +1,12 @@
+{
+  "api_url": "https://api.example.com/sales",
+  "db_connection": "mysql+pymysql://root:pote2546@localhost:3306/sales_db",
+  "mysql_host": "localhost",
+  "mysql_user": "root",
+  "mysql_password": "pote2546",
+  "mysql_db": "sales_db",
+  "mysql_table": "sales_data",
+  "mysql_edge":"sales_data_with_total"
+}
+
+  

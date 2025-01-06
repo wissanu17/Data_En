@@ -1,0 +1,11 @@
+transaction_id,product_name,category,quantity,price,transaction_date
+1001,Apple iPhone 14,Electronics,2,999,2023-12-01
+1002,Samsung Galaxy S22,Electronics,1,849,2023-12-01
+1003,Dell XPS 13,Laptops,1,1099,2023-12-02
+1004,Sony WH-1000XM5,Headphones,3,399,2023-12-02
+1005,Apple AirPods Pro,Headphones,2,249,2023-12-03
+1006,Logitech MX Master 3,Accessories,4,99,2023-12-03
+1007,HP Spectre x360,Laptops,1,1399,2023-12-04
+1008,Apple MacBook Pro,Laptops,2,1999,2023-12-04
+1009,Bose SoundLink II,Headphones,1,229,2023-12-05
+1010,Google Pixel 7,Electronics,1,599,2023-12-05
